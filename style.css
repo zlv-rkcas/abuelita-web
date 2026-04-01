@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #8B0000, #000000);
+    background: #d1006f; /* Fucsia sólido aesthetic */
     color: white;
 }
 
@@ -12,7 +12,8 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7); /* más elegante */
+    backdrop-filter: blur(10px);
 }
 
 nav ul {
@@ -28,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff4d6d;
+    color: #ff9ecf; /* tono aesthetic suave */
 }
 
 
@@ -70,7 +71,8 @@ nav a:hover {
 }
 
 .galeria img:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 
@@ -98,21 +100,27 @@ nav a:hover {
     }
 }
 
+
+/* BOTÓN PRO */
+
 .btn {
     margin-top: 30px;
     padding: 15px 30px;
     font-size: 18px;
     border: none;
     border-radius: 12px;
-    background: linear-gradient(45deg, #ff1a1a, #000);
-    color: white;
+    background: #000; /* negro elegante */
+    color: #ff4da6; /* fucsia brillante */
     cursor: pointer;
     transition: 0.3s;
+    font-weight: bold;
 }
 
 .btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px red;
+    background: #ff4da6;
+    color: #000;
+    box-shadow: 0 0 25px rgba(255, 77, 166, 0.8);
 }
 
 
